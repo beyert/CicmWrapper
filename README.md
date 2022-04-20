@@ -13,7 +13,7 @@ CICM wrapper is a C interface for [Tcl/Tk](https://www.tcl.tk/ "Tcl/Tk") and [Pu
 	- Clipping the drawing
 	- Colors hsl/rgba and hexadecimal
 	- etc.
-- Interactions:
+- Interactivity:
 	- Full mouse notification
 	- Full keyboard notification
 	- Cross platform modifiers
