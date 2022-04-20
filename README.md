@@ -5,8 +5,8 @@
 CICM wrapper is a C interface for [Tcl/Tk](https://www.tcl.tk/ "Tcl/Tk") and [Pure Data](http://msp.ucsd.edu/software.html "PD") that aims to facilitate the creation of objects for Pure Data.  One of the main goals is the creation of graphical user interfaces.  It also facilitates the implementation of dynamic multi-signal processing and improves the compatibility with Max.
 
 - Graphics:
-	- Layers system.
-	- Matrix translation and rotation.
+	- Layers system
+	- Matrix translation and rotation
 	- Bezier curves
 	- Multi shapes
 	- Text layout
@@ -64,4 +64,4 @@ Miller Puckette for Pure Data
 ### License:
 
 Copyright (C) 2013-2015 Pierre Guillot - CICM - Universite Paris 8  
-The Cream Library is licensed under the [BSD2 License](http://opensource.org/licenses/BSD-2-Clause "BSD2").
+The Cream Library is licensed under the [BSD2 License](http://opensource.org/licenses/BSD-2-Clause "BSD2")
