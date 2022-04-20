@@ -155,9 +155,9 @@ extern t_symbol* s_cream_logarithmic;
 extern t_symbol* s_cream_threshold;
 
 //! @cond
-EXTERN t_namelist *sys_staticpath;
-EXTERN t_namelist *sys_searchpath;
-EXTERN t_namelist *namelist_append_files(t_namelist *listwas, const char *s);
+extern t_namelist *sys_staticpath;
+extern t_namelist *sys_searchpath;
+extern t_namelist *namelist_append_files(t_namelist *listwas, const char *s);
 
 
 //! @endcond

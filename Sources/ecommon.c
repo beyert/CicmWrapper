@@ -780,38 +780,38 @@ void atom_getcolorarg(int witch, int argc, t_atom* argv, t_rgba* color)
 void epd_add_folder(const char* name, const char* folder)
 {
 	char path[MAXPDSTRING];
-	t_namelist* var = sys_searchpath;
+	t_namelist* var = pd_this->pd_stuff->st_searchpath;
 	while (var)
 	{
 		sprintf(path, "%s/%s",var->nl_string, name);
 		if(strncmp(var->nl_string, name, strlen(name)) == 0)
 		{
 			sprintf(path, "%s/%s", var->nl_string, folder);
-			namelist_append_files(sys_staticpath, path);
+			namelist_append_files(pd_this->pd_stuff->st_staticpath, path);
 			return;
 		}
 		else if(access(path, O_RDONLY) != -1)
 		{
 			sprintf(path, "%s/%s/%s", var->nl_string, name, folder);
-			namelist_append_files(sys_staticpath, path);
+			namelist_append_files(pd_this->pd_stuff->st_staticpath, path);
 			return;
 		}
 		var = var->nl_next;
 	}
-    var = sys_staticpath;
+    var = pd_this->pd_stuff->st_staticpath;
     while (var)
     {
         sprintf(path, "%s/%s",var->nl_string, name);
 		if(strncmp(var->nl_string, name, strlen(name)) == 0)
 		{
 			sprintf(path, "%s/%s", var->nl_string, folder);
-			namelist_append_files(sys_staticpath, path);
+			namelist_append_files(pd_this->pd_stuff->st_staticpath, path);
 			return;
 		}
 		else if(access(path, O_RDONLY) != -1)
 		{
 			sprintf(path, "%s/%s/%s", var->nl_string, name, folder);
-			namelist_append_files(sys_staticpath, path);
+			namelist_append_files(pd_this->pd_stuff->st_staticpath, path);
 			return;
 		}
 		var = var->nl_next;
